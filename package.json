@@ -1,0 +1,31 @@
+{
+  "name": "venados_backend",
+  "version": "1.0.0",
+  "description": "Server api for venados test application",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run prod",
+    "server": "node dist/server.js",
+    "dev": "NODE_ENV=development npm-run-all build server",
+    "prod": "NODE_ENV=production npm-run-all build server",
+    "build": "npm-run-all clean compile",
+    "compile": "babel ./src --out-dir dist",
+    "clean": "rimraf dist",
+    "watch:dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "criscordovaa",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}
