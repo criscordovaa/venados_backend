@@ -2,7 +2,10 @@
   "name": "venados_backend",
   "version": "1.0.0",
   "description": "Server api for venados test application",
-  "main": "server.js",
+  "main": "dist/server.js",
+  "engines": {
+    "node": "10.22.0"
+  },
   "scripts": {
     "start": "npm run prod",
     "server": "node dist/server.js",
